@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <attr name="support_layout" format="boolean"/>
+
+    <declare-styleable name="ItemSwitch">
+        <attr name="itemSwitchIcon" format="reference|color" />
+        <attr name="itemSwitchTitle" format="string" />
+        <attr name="itemSwitchSummary" format="string" />
+        <attr name="itemSwitchIsEnable" format="boolean" />
+        <attr name="itemSwitchTitleSize" format="dimension" />
+        <attr name="itemSwitchSummarySize" format="dimension" />
+        <attr name="itemSwitchTitleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Title">
+        <attr name="smtTitle" format="string"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="backText" format="string"/>
+        <attr name="backTextColor" format="color"/>
+        <attr name="backTextSize" format="dimension"/>
+        <attr name="backTextVisible" format="boolean"/>
+        <attr name="okText" format="string"/>
+        <attr name="okTextColor" format="color"/>
+        <attr name="okTextSize" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="SmartisanShadow">
+        <attr name="shadowDrawable" format="reference"/>
+        <attr name="shadowVisible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="IconPreferenceScreen">
+        <attr name="smtIcon" format="reference"/>
+
+    </declare-styleable>
+    <declare-styleable name="SettingItemSwitch">
+        <attr name="smtIcon"/>
+        <attr name="smtTitle"/>
+        <attr name="smtSummary" format="string"/>
+        <attr name="subTitle"/>
+        <attr name="isChecked" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingItemText">
+        <attr name="smtIcon"/>
+        <attr name="smtTitle"/>
+        <attr name="smtSummary"/>
+        <attr name="show_arrow" format="boolean"/>
+        <attr name="subTitle" format="string"/>
+        <attr name="subTitleFontSize" format="dimension"/>
+        <attr name="arrow" format="reference"/>
+        <attr name="titleMaxWidth" format="dimension"/>
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingItemCheck">
+        <attr name="itemIcon" format="reference|color"/>
+        <attr name="itemTitle" format="string"/>
+        <attr name="itemSummary" format="string"/>
+        <attr name="itemTitleSize" format="dimension"/>
+        <attr name="itemSummarySize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="DownloadProgressView">
+        <attr name="inner_circle_radius" format="dimension"/>
+        <attr name="fore_ring_width" format="dimension"/>
+        <attr name="back_ring_width" format="dimension"/>
+        <attr name="smt_progress" format="integer"/>
+        <attr name="back_progress_start_color" format="color"/>
+        <attr name="back_progress_end_color" format="color" />
+        <attr name="fore_progress_start_color" format="color"/>
+        <attr name="fore_progress_end_color" format="color" />
+        <attr name="failed_progress_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SliderWithIcons">
+        <attr name="left_icon_src" format="reference"/>
+        <attr name="right_icon_src" format="reference"/>
+        <attr name="android:thumb"/>
+        <attr name="android:progressDrawable"/>
+    </declare-styleable>
+    <declare-styleable name="TickMarkView">
+        <attr name="thumb" format="reference"/>
+        <attr name="bridge_src" format="reference"/>
+        <attr name="start_marker_src" format="reference"/>
+        <attr name="mid_marker_src" format="reference"/>
+        <attr name="end_marker_src" format="reference"/>
+        <attr name="marker_size" format="integer"/>
+        <attr name="marker" format="integer"/>
+        <attr name="labels" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CountDownTimerView">
+        <attr name="timer_progress_start_src" format="reference"/>
+        <attr name="timer_progress_bridge_src" format="reference"/>
+        <attr name="timer_progress_full_end_src" format="reference"/>
+        <attr name="timer_track_end_src" format="reference"/>
+        <attr name="timer_thumb_src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowTextView">
+        <attr name="shadowColors" format="reference|color"/>
+        <attr name="android:shadowDx"/>
+        <attr name="android:shadowDy"/>
+        <attr name="android:shadowRadius"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowButton">
+        <attr name="shadowColors"/>
+        <attr name="android:shadowDx"/>
+        <attr name="android:shadowDy"/>
+        <attr name="android:shadowRadius"/>
+        <attr name="backgroundShadow" format="reference"/>
+        <attr name="shadowButtonStyle" format="enum">
+            <enum name="smallButton" value="1"/>
+            <enum name="longButton" value="2"/>
+            <enum name="shrink_longButton" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedRectLinearLayout">
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorView">
+        <attr name="fillColor" format="color" />
+        <attr name="pageColor" format="color" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ListContentItem">
+        <attr name="smtTitle"/>
+        <attr name="smtSummary"/>
+        <attr name="smtIcon"/>
+        <attr name="backgroundStyle" format="enum">
+            <enum name="single" value="1" />
+            <enum name="top" value="2" />
+            <enum name="middle" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="customMidView" format="reference"/>
+        <attr name="customRightView" format="reference"/>
+        <attr name="isPressable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ListContentItemText">
+        <attr name="show_arrow"/>
+        <attr name="subTitle"/>
+    </declare-styleable>
+
+    <declare-styleable name="ListContentItemSwitch">
+        <attr name="isChecked"/>
+    </declare-styleable>
+
+    <declare-styleable name="ListContentItemCheck">
+        <attr name="selectedIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="HiddenListActionLayout">
+        <attr name="action_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="DialogPatternSectionGroup">
+        <attr name="section_primary_title" format="string"/>
+        <attr name="section_subtitle" format="string"/>
+        <attr name="section_message" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="DialogPatternAppInfoLayout">
+        <attr name="smtIcon" />
+        <attr name="smtTitle" />
+        <attr name="smtSummary" />
+    </declare-styleable>
+
+    <!-- chips -->
+    <declare-styleable name="ChipsView">
+        <attr name="type">
+            <flag name="normal" value="0x00" />
+            <flag name="vip" value="0x01" />
+            <flag name="remove" value="0x02" />
+            <flag name="error" value="0x04" />
+            <flag name="floated" value="0x08" />
+            <flag name="history" value="0x90" />
+            <flag name="hot" value="0x91" />
+            <flag name="recommended" value="0x92" />
+            <flag name="light" value="0x93" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanWheelTextView">
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanButton">
+        <attr name="smtButtonStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="back" value="1"/>
+            <enum name="setting" value="2"/>
+            <enum name="delete" value="3"/>
+            <enum name="highlightBlue" value="4"/>
+            <enum name="highlightRed" value="5"/>
+            <enum name="normalWithIcon" value="6"/>
+            <enum name="iconArea" value="7"/>
+            <enum name="search" value="8"/>
+            <enum name="custom" value="9"/>
+        </attr>
+        <attr name="buttonSrc" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanRadioTabGroup">
+        <attr name="contentArray" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanSpinner">
+        <attr name="smtSpinnerStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="drop" value="1"/>
+            <enum name="range" value="2"/>
+        </attr>
+        <attr name="spinnerText" format="string|reference"/>
+        <attr name="spinnerLeftIcon" format="reference"/>
+        <attr name="isVerticalScroll" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanComboTitleBar">
+        <attr name="leftButtonStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="back" value="1"/>
+            <enum name="setting" value="2"/>
+            <enum name="highlightBlue" value="4"/>
+            <enum name="highlightRed" value="5"/>
+        </attr>
+        <attr name="leftButtonText" format="string|reference"/>
+        <attr name="centerContentStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="tab" value="1"/>
+            <enum name="spinner" value="2"/>
+            <enum name="range" value="3"/>
+            <enum name="marquee" value="4"/>
+            <enum name="separator" value="5"/>
+        </attr>
+        <attr name="centerLeftIcon" format="reference"/>
+        <attr name="centerContentRef" format="string|reference"/>
+        <attr name="centerSubContentRef" format="string|reference"/>
+        <attr name="isCenterRangeVerticalScroll" format="boolean"/>
+        <attr name="rightButtonStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="setting" value="2"/>
+            <enum name="delete" value="3"/>
+            <enum name="iconList" value="6"/>
+            <enum name="areaIcon" value="7"/>
+            <enum name="search" value="8"/>
+            <enum name="custom" value="9"/>
+            <enum name="mix" value="10"/>
+        </attr>
+        <attr name="rightButtonText" format="string|reference"/>
+        <attr name="rightIconArray" format="reference"/>
+        <attr name="rightStyleArray" format="reference"/>
+        <attr name="rightResArray" format="reference"/>
+        <attr name="secondaryLayout" format="reference"/>
+        <attr name="smtTitleTextColor" format="color|reference"/>
+        <attr name="smtSubtitleTextColor" format="color|reference"/>
+        <attr name="support_layout"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanBottomBar">
+        <attr name="bottomBarIconArray" format="reference"/>
+        <attr name="bottomBarIconShowBackgroudMode" format="boolean"/>
+    </declare-styleable>
+
+    <!-- search bar -->
+    <declare-styleable name="SearchBar">
+        <attr name="searchBarBackground" format="color|reference" />
+        <attr name="editBackground" format="color|reference" />
+        <attr name="cancelBackground" format="color|reference" />
+        <attr name="cancelText" format="string|reference" />
+        <attr name="leftIcon" format="reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="hasLeftIcon" format="boolean" />
+        <attr name="hasRightIcon" format="boolean" />
+        <attr name="hasCancelButton" format="boolean" />
+        <attr name="hintText" format="string|reference" />
+        <attr name="focusableInit" format="boolean"/>
+        <attr name="autoFocus" format="boolean"/>
+        <attr name="withAnimation" format="boolean"/>
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="hasSecondaryFilter" format="boolean"/>
+    </declare-styleable>
+
+    <!-- message field -->
+    <declare-styleable name="MessageField">
+        <attr name="messageFieldBackground" format="color|reference" />
+        <attr name="sendButtonBackground" format="color|reference" />
+        <attr name="emojiIcon" format="reference" />
+        <attr name="hasEmojiIcon" format="boolean" />
+        <attr name="editorMaxHeight" format="integer|reference" />
+        <attr name="editorMaxLine" format="integer|reference" />
+        <attr name="editorMaxLength" format="integer|reference" />
+        <attr name="messageFieldHintText" format="string|reference" />
+        <attr name="messageFieldHintTextColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MixBottomBar">
+        <attr name="left_button_background" format="reference|color"/>
+        <attr name="center_button_background" format="reference|color"/>
+        <attr name="right_button_background" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonGroup">
+        <attr name="button_count" format="integer"/>
+        <attr name="has_button_gap" format="boolean"/>
+        <attr name="support_layout"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartisanBlankView">
+        <attr name="blankStyle">
+            <enum name="normal" value="0" />
+            <enum name="small" value="1" />
+            <enum name="withAction" value="2" />
+        </attr>
+        <attr name="primaryHint" format="string" />
+        <attr name="secondaryHint" format="string" />
+        <attr name="emptyDrawable" format="reference"/>
+        <attr name="emptyActionBackground" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ActionButtonGroup">
+        <attr name="action_type">
+            <enum name="left" value="0" />
+            <enum name="both" value="1" />
+        </attr>
+        <attr name="support_layout"/>
+    </declare-styleable>
+
+    <declare-styleable name="MenuDialogTitleBar">
+        <attr name="show_divider" format="boolean"/>
+    </declare-styleable>
+
+    <!-- editor -->
+    <declare-styleable name="AbsEditor">
+        <attr name="android:hint"/>
+        <attr name="singleLine" format="boolean"/>
+        <attr name="editorType" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="password" value="1"/>
+            <enum name="quickDelete" value="2"/>
+        </attr>
+        <attr name="editable" format="boolean"/>
+        <attr name="backgroundStyle"/>
+    </declare-styleable>
+    <declare-styleable name="LabelEditor">
+        <attr name="leftLabel" format="string"/>
+        <attr name="leftIcon" />
+        <attr name="showLeftArrow" format="boolean"/>
+        <attr name="showRightDivide" format="boolean"/>
+        <attr name="rightLabel" format="string" />
+        <attr name="rightIcon" />
+    </declare-styleable>
+
+    <!-- start [Rev One]: caption view theme -->
+    <declare-styleable name="Window">
+        <attr name="smtCaptionViewTheme">
+            <enum name="light" value="0" />
+            <enum name="dark" value="1" />
+        </attr>
+
+        <attr name="smtCaptionBarStyle" format="integer"/>
+    </declare-styleable>
+    <!-- end -->
+
+    <!-- UI7.0 Bar -->
+    <declare-styleable name="TitleBar">
+        <attr name="title_bar_center_text" format="string|reference"/>
+        <attr name="title_bar_bottom_type" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowFrameLayout">
+        <attr name="bottom_type" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmtShadow">
+        <attr name="smt_shadow_enabled" format="boolean"/>
+        <attr name="smt_shadow_project" format="boolean"/>
+    </declare-styleable>
+</resources>
