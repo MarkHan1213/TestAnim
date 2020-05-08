@@ -11,6 +11,8 @@ import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.transition.AutoTransition;
@@ -137,17 +139,18 @@ public class MainActivity extends AppCompatActivity {
 //                Trace.beginSection(" Do GroupAnim");
 //                doGroupAnim(v);
 //                Trace.endSection();
-
                 TransitionSet transition = new TransitionSet();
                 transition.setOrdering(TransitionSet.ORDERING_TOGETHER);
                 if (!isOpen) {
                     transition.setDuration(300L);
                     transition.addTransition(new Fade(Fade.OUT))
                             .addTransition(new ChangeBounds())
+                            .addTransition(new TestAlphaTransition())
                             .addTransition(new Fade(Fade.IN).setStartDelay(200L));
                 } else {
                     transition.addTransition(new Fade(Fade.OUT).setDuration(100L))
                             .addTransition(new ChangeBounds().setDuration(300L))
+                            .addTransition(new TestAlphaTransition())
                             .addTransition(new Fade(Fade.IN));
                 }
                 transition.setInterpolator(new DecelerateInterpolator());
@@ -221,11 +224,15 @@ public class MainActivity extends AppCompatActivity {
                     R.dimen.anim_start);
             two.setVisibility(View.GONE);
             three.setVisibility(View.GONE);
+//            ((GradientDrawable)ll_group.getBackground()).setColor(0xFFFFFF);
+            ll_group.setBackground(getDrawable(R.drawable.active_bg_blue));
         } else {
             width = res.getDimensionPixelSize(
                     R.dimen.anim_end);
             two.setVisibility(View.VISIBLE);
             three.setVisibility(View.VISIBLE);
+//            ((GradientDrawable)ll_group.getBackground()).setColor(0x9CC8FF);
+            ll_group.setBackground(getDrawable(R.drawable.active_bg));
         }
 
         layoutParams.width = width;

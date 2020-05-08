@@ -3,7 +3,6 @@
     android:id="@+id/topContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
     <ImageView
@@ -107,8 +106,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="50dp"
         android:layout_marginRight="10dp"
-
-        android:background="@drawable/btn_bg">
+        android:background="@drawable/active_bg_blue">
 
         <TextView
             android:id="@+id/one"
